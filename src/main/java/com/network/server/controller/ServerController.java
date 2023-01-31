@@ -30,7 +30,7 @@ public class ServerController {
     private final ServerService serverService;
     @GetMapping("/list")
     public ResponseEntity<Response> getAllServers() throws InterruptedException {
-        TimeUnit.SECONDS.sleep(3);
+        TimeUnit.SECONDS.sleep(1);
         return ResponseEntity.ok(
                 Response.builder()
                         .timeStamp(LocalDateTime.now())
